@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin: 0px;
+        }
+        h2 {            
+            padding: 20px;
+            text-align: center;
+            margin: 0px;
+        }
+        .header {
+            background-color: #0080ff;
+            margin: 0;
+            padding-left: 300px;
+            padding-right: 300px;
+            align-content: center;
+            align-items: center;
+        }
+        p {
+            color: white;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .button1 {
+            margin: 10px;
+            margin-bottom: 25px;
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px ;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid white;
+        }
+        .button2 {
+            background-color: #0080ff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid white;
+            margin: 10px;
+            margin-bottom: 25px;
+        }
+        .button3 {
+            background-color: #0080ff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: absolute;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid white;
+            margin-top: 30px;
+            margin-right: 40px;
+            margin-bottom: 0px;
+            text-align: center;        
+            float: right;
+
+        }
+        .form {
+            border: 2px gray solid;
+            margin-left: 8rem;
+            margin-right: 8rem;
+            position: relative;
+            border-radius: 5px;
+        }
+        input {
+            display: block;
+            width: 90%;
+            background-color: rgb(187, 221, 233);
+            border: lightgrey 1.5px solid;
+            height: 1.4rem
+        }
+
+        table {
+            width: 100%;
+            margin: 15px;
+            padding: 5px;
+        }
+
+
+        
+        </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Brand name</h1>
+        <p>Lorem ipsum, dolor sit amet <br> consectetur adipisicing elit. Esse tenetur <br> modi nulla! Exercitationem laboriosam numquam, alias <br> iure mollitia tenetur eaque voluptas ...</p>
+        <div class=container><button class="button1">Get Started</button>
+        <button class="button2">Components</button></div>
+    </div>
+    <h2>Sign Up</h2>
+    <div class="form">
+        <form action="/" method="POST">
+            <table>
+                <tr>
+                    <td>
+            <section id="left">
+            <label for="username">Username:*
+            <input class="form-control" onkeypress="return ((event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode == 8 || event.charCode == 32 || (event.charCode >= 48 && event.charCode <= 57));" id="name" formControlName="name" type="text" autocomplete="off" value="" placeholder="Enter Username" required></label> <br>
+            <label for="password">Password:*
+            <input type="password" placeholder="Enter password" required> </label><br>
+            <label for="confirm">Confirm Password:*
+            <input type="password" placeholder="Re-enter password" required></label>
+            </section></td>
+            <td>
+            <section id="right">
+            <label for="email">Email:*
+            <input type="email" placeholder="Enter email" required></label><br>
+            <label for="phone">Phone Number:*
+            <input type="tel" placeholder="Enter phone number" required></label><br>
+            <label for="birthday">Date of Birth:*
+            <input type="date" placeholder="yyyy-mm-dd" required></label>
+            </section></td>
+                </tr>
+               <tr>
+                <td>&nbsp;</td>
+                <td><button class="button3">Sign Up</button></td>
+          </form>
+    </div>
+</body>
+</html>
